@@ -373,7 +373,7 @@ def mapa():
 def mapa_uf(uf):
     username = get_username()
     lang = get_locale()
-    states_qids = {"ac": "Q25263", "av": "Q210527", "ba": "Q373528", "be": "Q321455", "br": "Q326203", "cb": "Q273529",
+    states_qids = {"ac": "Q25263", "av": "Q210527", "ba": "Q326203", "be": "Q321455", "br": "Q373528", "cb": "Q273529",
                    "co": "Q244517", "ev": "Q274118", "fa": "Q244521", "gu": "Q273533", "le": "Q244512", "li": "Q207199",
                    "ma": "Q26253", "pa": "Q225189", "po": "Q322792", "sa": "Q244510", "se": "Q274109", "vc": "Q326214",
                    "vi": "Q273525", "vr": "Q379372"}
@@ -412,7 +412,7 @@ def mapa_uf(uf):
 def geolocate(uf):
     username = get_username()
     lang = get_locale()
-    states_qids = {"ac": "Q25263", "av": "Q210527", "ba": "Q373528", "be": "Q321455", "br": "Q326203", "cb": "Q273529",
+    states_qids = {"ac": "Q25263", "av": "Q210527", "ba": "Q326203", "be": "Q321455", "br": "Q373528", "cb": "Q273529",
                    "co": "Q244517", "ev": "Q274118", "fa": "Q244521", "gu": "Q273533", "le": "Q244512", "li": "Q207199",
                    "ma": "Q26253", "pa": "Q225189", "po": "Q322792", "sa": "Q244510", "se": "Q274109", "vc": "Q326214",
                    "vi": "Q273525", "vr": "Q379372"}
