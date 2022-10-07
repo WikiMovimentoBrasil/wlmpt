@@ -4,9 +4,10 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
 msgid ""
-msgstr "Project-Id-Version: PROJECT VERSION\n"
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-10-07 08:26-0300\n"
+"POT-Creation-Date: 2022-10-07 10:29-0300\n"
 "PO-Revision-Date: 2022-08-28 02:21-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pt_BR\n"
@@ -23,16 +24,24 @@ msgstr "Ver mais informações e enviar fotografias"
 
 #: app.py:452
 #, python-format
-msgid "Sua sugestão para adicionar %(val)s à lista de monumentos foi enviada com sucesso!"
-msgstr "Sua sugestão para adicionar %(val)s à lista de monumentos foi enviada com sucesso!"
+msgid ""
+"Sua sugestão para adicionar %(val)s à lista de monumentos foi enviada com"
+" sucesso!"
+msgstr ""
+"Sua sugestão para adicionar %(val)s à lista de monumentos foi enviada com"
+" sucesso!"
 
 #: app.py:514
 msgid "Coordenadas inseridas com sucesso!"
 msgstr "Coordenadas inseridas com sucesso!"
 
 #: app.py:514
-msgid "Algo deu errado, atualize esta página e tente novamente. Caso o erro persista, entre em contato na seção \\\"Sobre\\\"."
-msgstr "Algo deu errado, atualize esta página e tente novamente. Caso o erro persista, entre em contato na seção \\\"Sobre\\\"."
+msgid ""
+"Algo deu errado, atualize esta página e tente novamente. Caso o erro "
+"persista, entre em contato na seção \\\"Sobre\\\"."
+msgstr ""
+"Algo deu errado, atualize esta página e tente novamente. Caso o erro "
+"persista, entre em contato na seção \\\"Sobre\\\"."
 
 #: app.py:559 app.py:568
 msgid "Uma imagem com este exato título já existe. Por favor, reformule o título."
@@ -40,28 +49,50 @@ msgstr "Uma imagem com este exato título já existe. Por favor, reformule o tí
 
 #: app.py:561
 #, python-format
-msgid "Esta imagem é uma duplicata exata da imagem https://commons.wikimedia.org/wiki/File:%(file_)s"
-msgstr "Esta imagem é uma duplicata exata da imagem https://commons.wikimedia.org/wiki/File:%(file_)s"
+msgid ""
+"Esta imagem é uma duplicata exata da imagem "
+"https://commons.wikimedia.org/wiki/File:%(file_)s"
+msgstr ""
+"Esta imagem é uma duplicata exata da imagem "
+"https://commons.wikimedia.org/wiki/File:%(file_)s"
 
 #: app.py:564
-msgid "Esta imagem é uma duplicata exata de uma outra imagem que foi deletada da base."
-msgstr "Esta imagem é uma duplicata exata de uma outra imagem que foi deletada da base."
+msgid ""
+"Esta imagem é uma duplicata exata de uma outra imagem que foi deletada da"
+" base."
+msgstr ""
+"Esta imagem é uma duplicata exata de uma outra imagem que foi deletada da"
+" base."
 
 #: app.py:566
-msgid "Uma outra imagem costumava utilizar este mesmo título. Por favor, reformule o título."
-msgstr "Uma outra imagem costumava utilizar este mesmo título. Por favor, reformule o título."
+msgid ""
+"Uma outra imagem costumava utilizar este mesmo título. Por favor, "
+"reformule o título."
+msgstr ""
+"Uma outra imagem costumava utilizar este mesmo título. Por favor, "
+"reformule o título."
 
 #: app.py:571 app.py:576
-msgid "Imagem enviada com sucesso! Verifique suas contribuições clicando em seu nome de usuário(a)."
-msgstr "Imagem enviada com sucesso! Verifique suas contribuições clicando em seu nome de usuário(a)."
+msgid ""
+"Imagem enviada com sucesso! Verifique suas contribuições clicando em seu "
+"nome de usuário(a)."
+msgstr ""
+"Imagem enviada com sucesso! Verifique suas contribuições clicando em seu "
+"nome de usuário(a)."
 
 #: app.py:579
 msgid "Error."
 msgstr "Error."
 
 #: app.py:581
-msgid "Ocorreu algum erro! Verifique o formulário e tente novamente. Caso o erro persista, por favor, reporte em https://github.com/WikiMovimentoBrasil/wlmpt/issues"
-msgstr "Ocorreu algum erro! Verifique o formulário e tente novamente. Caso o erro persista, por favor, reporte em https://github.com/WikiMovimentoBrasil/wlmpt/issues"
+msgid ""
+"Ocorreu algum erro! Verifique o formulário e tente novamente. Caso o erro"
+" persista, por favor, reporte em "
+"https://github.com/WikiMovimentoBrasil/wlmpt/issues"
+msgstr ""
+"Ocorreu algum erro! Verifique o formulário e tente novamente. Caso o erro"
+" persista, por favor, reporte em "
+"https://github.com/WikiMovimentoBrasil/wlmpt/issues"
 
 #: wikidata.py:291
 msgid "Sem imagens"
@@ -149,26 +180,60 @@ msgid "info@wikimedia.pt"
 msgstr "info@wikimedia.pt"
 
 #: templates/aboutmodal.html:14
-msgid "Você está pronto(a) para participar do maior concurso fotográfico do mundo?! O aplicativo <b>Wiki Loves Monuments Portugal</b> te oferece diversas formas de participar: Enviando suas fotografias dos monumentos portugueses de maneira simplificada, geolocalizando monumentos ainda sem coordenadas registradas e sugerindo monumentos que por acaso não estejam nas listas."
-msgstr "Você está pronto(a) para participar do maior concurso fotográfico do mundo?! O aplicativo <b>Wiki Loves Monuments Portugal</b> te oferece diversas formas de participar: Enviando suas fotografias dos monumentos portugueses de maneira simplificada, geolocalizando monumentos ainda sem coordenadas registradas e sugerindo monumentos que por acaso não estejam nas listas."
+msgid ""
+"Você está pronto(a) para participar do maior concurso fotográfico do "
+"mundo?! O aplicativo <b>Wiki Loves Monuments Portugal</b> te oferece "
+"diversas formas de participar: Enviando suas fotografias dos monumentos "
+"portugueses de maneira simplificada, geolocalizando monumentos ainda sem "
+"coordenadas registradas e sugerindo monumentos que por acaso não estejam "
+"nas listas."
+msgstr ""
+"Você está pronto(a) para participar do maior concurso fotográfico do "
+"mundo?! O aplicativo <b>Wiki Loves Monuments Portugal</b> te oferece "
+"diversas formas de participar: Enviando suas fotografias dos monumentos "
+"portugueses de maneira simplificada, geolocalizando monumentos ainda sem "
+"coordenadas registradas e sugerindo monumentos que por acaso não estejam "
+"nas listas."
 
 #: templates/aboutmodal.html:15 templates/sobre.html:36
-msgid "O Wiki Loves Monuments é o maior concurso fotográfico do mundo! A etapa nacional ocorre entre 1 e 31 de outubro de 2022."
-msgstr "O Wiki Loves Monuments é o maior concurso fotográfico do mundo! A etapa nacional ocorre entre 1 e 31 de outubro de 2022."
+msgid ""
+"O Wiki Loves Monuments é o maior concurso fotográfico do mundo! A etapa "
+"nacional ocorre entre 1 e 31 de outubro de 2022."
+msgstr ""
+"O Wiki Loves Monuments é o maior concurso fotográfico do mundo! A etapa "
+"nacional ocorre entre 1 e 31 de outubro de 2022."
 
 #: templates/aboutmodal.html:16
-msgid "Participe e concorra a prêmios de até 400€. Mais detalhes na <a target='_blank' href='https://wikilovesmonuments.org.pt/' title='Wiki Loves Monuments Portugal 2022'>página do concurso</a>."
-msgstr "Participe e concorra a prêmios de até 400€. Mais detalhes na <a target='_blank' href='https://wikilovesmonuments.org.pt/' title='Wiki Loves Monuments Portugal 2022'>página do concurso</a>."
+msgid ""
+"Participe e concorra a prêmios de até 400€. Mais detalhes na <a "
+"target='_blank' href='https://wikilovesmonuments.org.pt/' title='Wiki "
+"Loves Monuments Portugal 2022'>página do concurso</a>."
+msgstr ""
+"Participe e concorra a prêmios de até 400€. Mais detalhes na <a "
+"target='_blank' href='https://wikilovesmonuments.org.pt/' title='Wiki "
+"Loves Monuments Portugal 2022'>página do concurso</a>."
 
 #: templates/aboutmodal.html:17
 #, python-format
-msgid "<i>Wiki Loves Monuments Portugal</i> é um <i>fork</i> do <a target='_blank' href='https://wikilovesbrasil.toolforge.org' title='Wiki Loves Brasil'>aplicativo Wiki Loves Brasil</a>, desenvolvido pelo <i><b>%(projeto)s</b></i>."
-msgstr "<i>Wiki Loves Monuments Portugal</i> é um <i>fork</i> do <a target='_blank' href='https://wikilovesbrasil.toolforge.org' title='Wiki Loves Brasil'>aplicativo Wiki Loves Brasil</a>, desenvolvido pelo <i><b>%(projeto)s</b></i>."
+msgid ""
+"<i>Wiki Loves Monuments Portugal</i> é um <i>fork</i> do <a "
+"target='_blank' href='https://wikilovesbrasil.toolforge.org' title='Wiki "
+"Loves Brasil'>aplicativo Wiki Loves Brasil</a>, desenvolvido pelo "
+"<i><b>%(projeto)s</b></i>."
+msgstr ""
+"<i>Wiki Loves Monuments Portugal</i> é um <i>fork</i> do <a "
+"target='_blank' href='https://wikilovesbrasil.toolforge.org' title='Wiki "
+"Loves Brasil'>aplicativo Wiki Loves Brasil</a>, desenvolvido pelo "
+"<i><b>%(projeto)s</b></i>."
 
 #: templates/aboutmodal.html:18 templates/presentationmodal.html:27
 #, python-format
-msgid "Dúvidas, reclamações, sugestões ou elogios: Envie uma mensagem para %(developer)s."
-msgstr "Dúvidas, reclamações, sugestões ou elogios: Envie uma mensagem para %(developer)s."
+msgid ""
+"Dúvidas, reclamações, sugestões ou elogios: Envie uma mensagem para "
+"%(developer)s."
+msgstr ""
+"Dúvidas, reclamações, sugestões ou elogios: Envie uma mensagem para "
+"%(developer)s."
 
 #: templates/aboutmodal.html:22 templates/sobre.html:41
 msgid "Flask"
@@ -204,13 +269,21 @@ msgstr "Wiki Loves Brasil"
 
 #: templates/aboutmodal.html:31 templates/sobre.html:50
 #, python-format
-msgid "Este aplicativo é inspirado no %(reference)s, desenvolvido por Paweł Marynowski e Stephen LaPorte"
-msgstr "Este aplicativo é inspirado no %(reference)s, desenvolvido por Paweł Marynowski e Stephen LaPorte"
+msgid ""
+"Este aplicativo é inspirado no %(reference)s, desenvolvido por Paweł "
+"Marynowski e Stephen LaPorte"
+msgstr ""
+"Este aplicativo é inspirado no %(reference)s, desenvolvido por Paweł "
+"Marynowski e Stephen LaPorte"
 
 #: templates/aboutmodal.html:32 templates/sobre.html:51
 #, python-format
-msgid "Este aplicativo é um fork de %(reference2)s, desenvolvido pelo Wiki Movimento Brasil"
-msgstr "Este aplicativo é um fork de %(reference2)s, desenvolvido pelo Wiki Movimento Brasil"
+msgid ""
+"Este aplicativo é um fork de %(reference2)s, desenvolvido pelo Wiki "
+"Movimento Brasil"
+msgstr ""
+"Este aplicativo é um fork de %(reference2)s, desenvolvido pelo Wiki "
+"Movimento Brasil"
 
 #: templates/aboutmodal.html:33 templates/sobre.html:52
 #, python-format
@@ -254,7 +327,7 @@ msgstr "Página inicial"
 msgid "WLM Portugal"
 msgstr "WLM Portugal"
 
-#: templates/base.html:22 templates/error.html:17
+#: templates/base.html:22 templates/error.html:17 templates/sobre.html:26
 msgid "Logotipo Wiki Loves Monuments Portugal"
 msgstr "Logotipo Wiki Loves Monuments Portugal"
 
@@ -327,8 +400,14 @@ msgid "Adicionar coordenadas"
 msgstr "Adicionar coordenadas"
 
 #: templates/geolocate.html:105
-msgid "Adicione coordenadas clicando em <i class=\"fa-solid\nfa-map-pin\"></i> e posicionando o marcador no mapa ou manualmente no campo abaixo."
-msgstr "Adicione coordenadas clicando em <i class=\"fa-solid\nfa-map-pin\"></i> e posicionando o marcador no mapa ou manualmente no campo abaixo."
+msgid ""
+"Adicione coordenadas clicando em <i class=\"fa-solid\n"
+"                        fa-map-pin\"></i> e posicionando o marcador no "
+"mapa ou manualmente no campo abaixo."
+msgstr ""
+"Adicione coordenadas clicando em <i class=\"fa-solid\n"
+"fa-map-pin\"></i> e posicionando o marcador no mapa ou manualmente no "
+"campo abaixo."
 
 #: templates/geolocate.html:110
 msgid "Coordenadas"
@@ -549,16 +628,36 @@ msgstr "Vista aérea do monumento"
 
 #: templates/item.html:548
 #, python-format
-msgid "Eu, %(username)s, detentor(a) dos direitos autorais desta(s) imagem(ns), concedo <b>irrevogavelmente</b> a qualquer pessoa o direito de utilizá-la sob a <a target='_blank' href='https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR'>licença Creative Commons Atribuição-CompartilhaIgual 4.0</a>. Com isso, qualquer pessoa poderá usar, compartilhar ou remixar esta imagem, contanto que me creditem e compartilhem qualquer obra derivada sob esta mesma licença."
-msgstr "Eu, %(username)s, detentor(a) dos direitos autorais desta(s) imagem(ns), concedo <b>irrevogavelmente</b> a qualquer pessoa o direito de utilizá-la sob a <a target='_blank' href='https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR'>licença Creative Commons Atribuição-CompartilhaIgual 4.0</a>. Com isso, qualquer pessoa poderá usar, compartilhar ou remixar esta imagem, contanto que me creditem e compartilhem qualquer obra derivada sob esta mesma licença."
+msgid ""
+"Eu, %(username)s, detentor(a) dos direitos autorais desta(s) imagem(ns), "
+"concedo <b>irrevogavelmente</b> a qualquer pessoa o direito de utilizá-la"
+" sob a <a target='_blank' href='https://creativecommons.org/licenses/by-"
+"sa/4.0/deed.pt_BR'>licença Creative Commons Atribuição-CompartilhaIgual "
+"4.0</a>. Com isso, qualquer pessoa poderá usar, compartilhar ou remixar "
+"esta imagem, contanto que me creditem e compartilhem qualquer obra "
+"derivada sob esta mesma licença."
+msgstr ""
+"Eu, %(username)s, detentor(a) dos direitos autorais desta(s) imagem(ns), "
+"concedo <b>irrevogavelmente</b> a qualquer pessoa o direito de utilizá-la"
+" sob a <a target='_blank' href='https://creativecommons.org/licenses/by-"
+"sa/4.0/deed.pt_BR'>licença Creative Commons Atribuição-CompartilhaIgual "
+"4.0</a>. Com isso, qualquer pessoa poderá usar, compartilhar ou remixar "
+"esta imagem, contanto que me creditem e compartilhem qualquer obra "
+"derivada sob esta mesma licença."
 
 #: templates/item.html:549
 msgid "Enviar imagem(ns)"
 msgstr "Enviar imagem(ns)"
 
 #: templates/item.html:565
-msgid "Ocorreu algum erro! Verifique que fez login e revise o formulário. Caso o erro persista, por favor, reporte em https://github.com/WikiMovimentoBrasil/wlmpt/issues"
-msgstr "Ocorreu algum erro! Verifique que fez login e revise o formulário. Caso o erro persista, por favor, reporte em https://github.com/WikiMovimentoBrasil/wlmpt/issues"
+msgid ""
+"Ocorreu algum erro! Verifique que fez login e revise o formulário. Caso o"
+" erro persista, por favor, reporte em "
+"https://github.com/WikiMovimentoBrasil/wlmpt/issues"
+msgstr ""
+"Ocorreu algum erro! Verifique que fez login e revise o formulário. Caso o"
+" erro persista, por favor, reporte em "
+"https://github.com/WikiMovimentoBrasil/wlmpt/issues"
 
 #: templates/item.html:592
 msgid "Arquivo enviado"
@@ -589,8 +688,8 @@ msgid "Informações sobre o aplicativo"
 msgstr "Informações sobre o aplicativo"
 
 #: templates/map.html:31
-msgid "Selecione um estado"
-msgstr "Selecione um estado"
+msgid "Selecione um distrito ou região"
+msgstr "Selecione um distrito ou região"
 
 #: templates/map.html:36
 msgid "Portugal"
@@ -701,16 +800,30 @@ msgid "Olá, gostaríamos de te dar as boas-vindas!"
 msgstr "Olá, gostaríamos de te dar as boas-vindas!"
 
 #: templates/presentationmodal.html:12
-msgid "O <b>Wiki Loves Monuments Portugal</b> é um aplicativo de envio de imagens para a etapa nacional do maior concurso fotográfico do mundo, o <b><i>Wiki Loves Monuments</i></b>!"
-msgstr "O <b>Wiki Loves Monuments Portugal</b> é um aplicativo de envio de imagens para a etapa nacional do maior concurso fotográfico do mundo, o <b><i>Wiki Loves Monuments</i></b>!"
+msgid ""
+"O <b>Wiki Loves Monuments Portugal</b> é um aplicativo de envio de "
+"imagens para a etapa nacional do maior concurso fotográfico do mundo, o "
+"<b><i>Wiki Loves Monuments</i></b>!"
+msgstr ""
+"O <b>Wiki Loves Monuments Portugal</b> é um aplicativo de envio de "
+"imagens para a etapa nacional do maior concurso fotográfico do mundo, o "
+"<b><i>Wiki Loves Monuments</i></b>!"
 
 #: templates/presentationmodal.html:13
-msgid "Envie suas fotografias do patrimônio histórico português durante o mês de outubro para participar e concorrer a prêmios."
-msgstr "Envie suas fotografias do patrimônio histórico português durante o mês de outubro para participar e concorrer a prêmios."
+msgid ""
+"Envie suas fotografias do patrimônio histórico português durante o mês de"
+" outubro para participar e concorrer a prêmios."
+msgstr ""
+"Envie suas fotografias do patrimônio histórico português durante o mês de"
+" outubro para participar e concorrer a prêmios."
 
 #: templates/presentationmodal.html:15
-msgid "Comece selecionando uma subdivisão no mapa para ver os monumentos da região."
-msgstr "Comece selecionando uma subdivisão no mapa para ver os monumentos da região."
+msgid ""
+"Comece selecionando uma subdivisão no mapa para ver os monumentos da "
+"região."
+msgstr ""
+"Comece selecionando uma subdivisão no mapa para ver os monumentos da "
+"região."
 
 #: templates/presentationmodal.html:18
 msgid "https://wikilovesmonuments.org.pt"
@@ -722,28 +835,52 @@ msgstr "Visite a página do concurso"
 
 #: templates/presentationmodal.html:26
 #, python-format
-msgid "<i>Wiki Loves Monuments Portugal</i> é um aplicativo desenvolvido pelo <i><b>%(projeto)s</b></i>."
-msgstr "<i>Wiki Loves Monuments Portugal</i> é um aplicativo desenvolvido pelo <i><b>%(projeto)s</b></i>."
-
-#: templates/sobre.html:26
-msgid "Logotipo Wiki Loves Monuments Brasil"
-msgstr "Logotipo Wiki Loves Monuments Brasil"
+msgid ""
+"<i>Wiki Loves Monuments Portugal</i> é um aplicativo desenvolvido pelo "
+"<i><b>%(projeto)s</b></i>."
+msgstr ""
+"<i>Wiki Loves Monuments Portugal</i> é um aplicativo desenvolvido pelo "
+"<i><b>%(projeto)s</b></i>."
 
 #: templates/sobre.html:35
-msgid "Você está pronto(a) para participar do maior concurso fotográfico do mundo?! O aplicativo <b>Wiki Loves Monuments Portugal</b> te oferece diversas formas de participar: Enviando suas fotografias dos monumentos portugueses de maneira simplificada, geolocalizar monumentos ainda sem coordenadas registradas e sugerir monumentos que por acaso não estejam nas listas."
-msgstr "Você está pronto(a) para participar do maior concurso fotográfico do mundo?! O aplicativo <b>Wiki Loves Monuments Portugal</b> te oferece diversas formas de participar: Enviando suas fotografias dos monumentos portugueses de maneira simplificada, geolocalizar monumentos ainda sem coordenadas registradas e sugerir monumentos que por acaso não estejam nas listas."
+msgid ""
+"Você está pronto(a) para participar do maior concurso fotográfico do "
+"mundo?! O aplicativo <b>Wiki Loves Monuments Portugal</b> te oferece "
+"diversas formas de participar: Enviando suas fotografias dos monumentos "
+"portugueses de maneira simplificada, geolocalizar monumentos ainda sem "
+"coordenadas registradas e sugerir monumentos que por acaso não estejam "
+"nas listas."
+msgstr ""
+"Você está pronto(a) para participar do maior concurso fotográfico do "
+"mundo?! O aplicativo <b>Wiki Loves Monuments Portugal</b> te oferece "
+"diversas formas de participar: Enviando suas fotografias dos monumentos "
+"portugueses de maneira simplificada, geolocalizar monumentos ainda sem "
+"coordenadas registradas e sugerir monumentos que por acaso não estejam "
+"nas listas."
 
 #: templates/sobre.html:37
-msgid "Participe e concorra a prêmios. Mais detalhes na <a target='_blank' href='https://wikilovesmonuments.org.pt/' title='Wiki Loves Monuments Portugal 2022'>página do concurso</a>."
-msgstr "Participe e concorra a prêmios. Mais detalhes na <a target='_blank' href='https://wikilovesmonuments.org.pt/' title='Wiki Loves Monuments Portugal 2022'>página do concurso</a>."
+msgid ""
+"Participe e concorra a prêmios. Mais detalhes na <a target='_blank' "
+"href='https://wikilovesmonuments.org.pt/' title='Wiki Loves Monuments "
+"Portugal 2022'>página do concurso</a>."
+msgstr ""
+"Participe e concorra a prêmios. Mais detalhes na <a target='_blank' "
+"href='https://wikilovesmonuments.org.pt/' title='Wiki Loves Monuments "
+"Portugal 2022'>página do concurso</a>."
 
 #: templates/suggest.html:17
 msgid "Sugira monumentos"
 msgstr "Sugira monumentos"
 
 #: templates/suggest.html:44
-msgid "Utilize o formulário abaixo para sugerir monumentos que não estejam nos mapas ou nas\nlistas do Wiki Loves Monuments Portugal."
-msgstr "Utilize o formulário abaixo para sugerir monumentos que não estejam nos mapas ou nas\nlistas do Wiki Loves Monuments Portugal."
+msgid ""
+"Utilize o formulário abaixo para sugerir monumentos que não estejam nos "
+"mapas ou nas\n"
+"                listas do Wiki Loves Monuments Portugal."
+msgstr ""
+"Utilize o formulário abaixo para sugerir monumentos que não estejam nos "
+"mapas ou nas\n"
+"listas do Wiki Loves Monuments Portugal."
 
 #: templates/suggest.html:49
 msgid "Qual o nome do monumento? <sup style=\"color:#990000\">*</sup>"
@@ -858,8 +995,12 @@ msgid "Madeira"
 msgstr "Madeira"
 
 #: templates/suggest.html:94
-msgid "Em qual(is) freguesia(s) está localizado? <sup style=\"color:#990000\">*</sup>"
-msgstr "Em qual(is) freguesia(s) está localizado? <sup style=\"color:#990000\">*</sup>"
+msgid ""
+"Em qual(is) freguesia(s) está localizado? <sup "
+"style=\"color:#990000\">*</sup>"
+msgstr ""
+"Em qual(is) freguesia(s) está localizado? <sup "
+"style=\"color:#990000\">*</sup>"
 
 #: templates/suggest.html:97
 msgid "Digite o nome da freguesia"
@@ -874,8 +1015,12 @@ msgid "Digite o endereço"
 msgstr "Digite o endereço"
 
 #: templates/suggest.html:105
-msgid "Link para referência sobre o monumento: <sup style=\"color:#990000\">*</sup>"
-msgstr "Link para referência sobre o monumento: <sup style=\"color:#990000\">*</sup>"
+msgid ""
+"Link para referência sobre o monumento: <sup "
+"style=\"color:#990000\">*</sup>"
+msgstr ""
+"Link para referência sobre o monumento: <sup "
+"style=\"color:#990000\">*</sup>"
 
 #: templates/suggest.html:107
 msgid "Insira a URL de referência"
@@ -896,3 +1041,10 @@ msgstr "Mapa Geral"
 #: templates/topnavbar.html:5
 msgid "Idioma"
 msgstr "Idioma"
+
+#~ msgid "Selecione um estado"
+#~ msgstr "Selecione um estado"
+
+#~ msgid "Logotipo Wiki Loves Monuments Brasil"
+#~ msgstr "Logotipo Wiki Loves Monuments Brasil"
+

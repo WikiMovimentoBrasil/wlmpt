@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: eder.porto@wmnobrasil.org\n"
-"POT-Creation-Date: 2022-10-07 08:26-0300\n"
+"POT-Creation-Date: 2022-10-07 10:29-0300\n"
 "PO-Revision-Date: 2022-05-26 04:58-0300\n"
 "Last-Translator: Éder Porto <eder.porto@wmnobrasil.org>\n"
 "Language: en\n"
@@ -28,7 +28,9 @@ msgstr "See more information and send photos"
 msgid ""
 "Sua sugestão para adicionar %(val)s à lista de monumentos foi enviada com"
 " sucesso!"
-msgstr "Your suggestion to add %(val)s to the monument list has been successfully sent!"
+msgstr ""
+"Your suggestion to add %(val)s to the monument list has been successfully"
+" sent!"
 
 #: app.py:514
 msgid "Coordenadas inseridas com sucesso!"
@@ -38,8 +40,9 @@ msgstr "Coordinates entered successfully!"
 msgid ""
 "Algo deu errado, atualize esta página e tente novamente. Caso o erro "
 "persista, entre em contato na seção \\\"Sobre\\\"."
-msgstr "Something went wrong, please refresh this page and try again. "
-"If the error persists, please contact us in the \\\"About\\\" section."
+msgstr ""
+"Something went wrong, please refresh this page and try again. If the "
+"error persists, please contact us in the \\\"About\\\" section."
 
 #: app.py:559 app.py:568
 msgid "Uma imagem com este exato título já existe. Por favor, reformule o título."
@@ -50,14 +53,17 @@ msgstr "An image with this exact title already exists. Please rephrase the title
 msgid ""
 "Esta imagem é uma duplicata exata da imagem "
 "https://commons.wikimedia.org/wiki/File:%(file_)s"
-msgstr "This image is an exact duplicate of the image "
+msgstr ""
+"This image is an exact duplicate of the image "
 "https://commons.wikimedia.org/wiki/File:%(file_)s"
 
 #: app.py:564
 msgid ""
 "Esta imagem é uma duplicata exata de uma outra imagem que foi deletada da"
 " base."
-msgstr "This image is an exact duplicate of another image that was deleted from the base."
+msgstr ""
+"This image is an exact duplicate of another image that was deleted from "
+"the base."
 
 #: app.py:566
 msgid ""
@@ -69,7 +75,9 @@ msgstr "Another image used to use this same title. Please rewrite it"
 msgid ""
 "Imagem enviada com sucesso! Verifique suas contribuições clicando em seu "
 "nome de usuário(a)."
-msgstr "Image sent successfully! Check your contributions by clicking on your username."
+msgstr ""
+"Image sent successfully! Check your contributions by clicking on your "
+"username."
 
 #: app.py:579
 msgid "Error."
@@ -180,10 +188,10 @@ msgid ""
 "nas listas."
 msgstr ""
 "Are you ready to participate in the biggest photo contest in the world?! "
-"The <b>Wiki Loves Monuments Portugal</b> app offers you several ways to participate: "
-"Sending your photographs of Portuguese monuments in a simplified way, "
-"geolocating monuments without registered coordinates and suggest "
-"monuments that happen not to be on the lists."
+"The <b>Wiki Loves Monuments Portugal</b> app offers you several ways to "
+"participate: Sending your photographs of Portuguese monuments in a "
+"simplified way, geolocating monuments without registered coordinates and "
+"suggest monuments that happen not to be on the lists."
 
 #: templates/aboutmodal.html:15 templates/sobre.html:36
 msgid ""
@@ -199,9 +207,9 @@ msgid ""
 "target='_blank' href='https://wikilovesmonuments.org.pt/' title='Wiki "
 "Loves Monuments Portugal 2022'>página do concurso</a>."
 msgstr ""
-"Join and compete for prizes up to 400€. More details on the <a target='_blank' "
-"href='https://wikilovesmonuments.org.pt/' title='Wiki Loves Monuments Portugal "
-"2022'>Contest page</a>."
+"Join and compete for prizes up to 400€. More details on the <a "
+"target='_blank' href='https://wikilovesmonuments.org.pt/' title='Wiki "
+"Loves Monuments Portugal 2022'>Contest page</a>."
 
 #: templates/aboutmodal.html:17
 #, python-format
@@ -221,8 +229,9 @@ msgstr ""
 msgid ""
 "Dúvidas, reclamações, sugestões ou elogios: Envie uma mensagem para "
 "%(developer)s."
-msgstr "Questions, complaints, suggestions or compliments: Send a "
-"message to %(developer)s."
+msgstr ""
+"Questions, complaints, suggestions or compliments: Send a message to "
+"%(developer)s."
 
 #: templates/aboutmodal.html:22 templates/sobre.html:41
 msgid "Flask"
@@ -270,8 +279,7 @@ msgstr ""
 msgid ""
 "Este aplicativo é um fork de %(reference2)s, desenvolvido pelo Wiki "
 "Movimento Brasil"
-msgstr ""
-"This app is a fork of %(reference2)s, developed by Wiki Movimento Brasil"
+msgstr "This app is a fork of %(reference2)s, developed by Wiki Movimento Brasil"
 
 #: templates/aboutmodal.html:33 templates/sobre.html:52
 #, python-format
@@ -315,7 +323,7 @@ msgstr "Homepage"
 msgid "WLM Portugal"
 msgstr "WLM Portugal"
 
-#: templates/base.html:22 templates/error.html:17
+#: templates/base.html:22 templates/error.html:17 templates/sobre.html:26
 msgid "Logotipo Wiki Loves Monuments Portugal"
 msgstr "Wiki Loves Portugal logo"
 
@@ -681,8 +689,8 @@ msgid "Informações sobre o aplicativo"
 msgstr "App information"
 
 #: templates/map.html:31
-msgid "Selecione um estado"
-msgstr "Select a state"
+msgid "Selecione um distrito ou região"
+msgstr "Select a district or region"
 
 #: templates/map.html:36
 msgid "Portugal"
@@ -798,9 +806,9 @@ msgid ""
 "imagens para a etapa nacional do maior concurso fotográfico do mundo, o "
 "<b><i>Wiki Loves Monuments</i></b>!"
 msgstr ""
-"The <b>Wiki Loves Monuments Portugal</b> is an application for uploading images to "
-"the national phase of the biggest photo contest in the world, the "
-"<b><i>Wiki Loves Monuments</i></b>!"
+"The <b>Wiki Loves Monuments Portugal</b> is an application for uploading "
+"images to the national phase of the biggest photo contest in the world, "
+"the <b><i>Wiki Loves Monuments</i></b>!"
 
 #: templates/presentationmodal.html:13
 msgid ""
@@ -835,10 +843,6 @@ msgstr ""
 "<i>Wiki Loves Monuments Portugal</i> is an application developed by "
 "<i><b>%(projeto)s</b></i>."
 
-#: templates/sobre.html:26
-msgid "Logotipo Wiki Loves Monuments Portugal"
-msgstr "Wiki Loves Monuments Portugal logo"
-
 #: templates/sobre.html:35
 msgid ""
 "Você está pronto(a) para participar do maior concurso fotográfico do "
@@ -849,10 +853,10 @@ msgid ""
 "nas listas."
 msgstr ""
 "Are you ready to participate in the biggest photo contest in the world?! "
-"The <b>Wiki Loves Monuments Portugal</b> app offers you several ways to participate: "
-"Sending your photographs of Portuguese monuments in a simplified way, "
-"geolocating monuments without registered coordinates and suggest "
-"monuments that happen not to be on the lists."
+"The <b>Wiki Loves Monuments Portugal</b> app offers you several ways to "
+"participate: Sending your photographs of Portuguese monuments in a "
+"simplified way, geolocating monuments without registered coordinates and "
+"suggest monuments that happen not to be on the lists."
 
 #: templates/sobre.html:37
 msgid ""
@@ -861,8 +865,8 @@ msgid ""
 "Portugal 2022'>página do concurso</a>."
 msgstr ""
 "Join and compete for prizes. More details on the <a target='_blank' "
-"href='https://wikilovesmonuments.org.pt/' title='Wiki Loves Monuments Portugal "
-"2022'>Contest page</a>."
+"href='https://wikilovesmonuments.org.pt/' title='Wiki Loves Monuments "
+"Portugal 2022'>Contest page</a>."
 
 #: templates/suggest.html:17
 msgid "Sugira monumentos"
@@ -993,9 +997,7 @@ msgstr "Madeira"
 msgid ""
 "Em qual(is) freguesia(s) está localizado? <sup "
 "style=\"color:#990000\">*</sup>"
-msgstr ""
-"In which freguesia(s) is located? <sup "
-"style=\"color:#990000\">*</sup>"
+msgstr "In which freguesia(s) is located? <sup style=\"color:#990000\">*</sup>"
 
 #: templates/suggest.html:97
 msgid "Digite o nome da freguesia"
@@ -1013,9 +1015,7 @@ msgstr "Enter the address"
 msgid ""
 "Link para referência sobre o monumento: <sup "
 "style=\"color:#990000\">*</sup>"
-msgstr ""
-"Link to reference the monument: "
-"<sup style=\"color:#990000\">*</sup>"
+msgstr "Link to reference the monument: <sup style=\"color:#990000\">*</sup>"
 
 #: templates/suggest.html:107
 msgid "Insira a URL de referência"
@@ -1036,3 +1036,7 @@ msgstr "General Map"
 #: templates/topnavbar.html:5
 msgid "Idioma"
 msgstr "Language"
+
+#~ msgid "Selecione um estado"
+#~ msgstr "Select a state"
+

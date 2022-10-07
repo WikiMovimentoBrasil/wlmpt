@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-10-07 08:26-0300\n"
+"POT-Creation-Date: 2022-10-07 10:29-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -290,7 +290,7 @@ msgstr ""
 msgid "WLM Portugal"
 msgstr ""
 
-#: templates/base.html:22 templates/error.html:17
+#: templates/base.html:22 templates/error.html:17 templates/sobre.html:26
 msgid "Logotipo Wiki Loves Monuments Portugal"
 msgstr ""
 
@@ -638,7 +638,7 @@ msgid "Informações sobre o aplicativo"
 msgstr ""
 
 #: templates/map.html:31
-msgid "Selecione um estado"
+msgid "Selecione um distrito ou região"
 msgstr ""
 
 #: templates/map.html:36
@@ -781,10 +781,6 @@ msgstr ""
 msgid ""
 "<i>Wiki Loves Monuments Portugal</i> é um aplicativo desenvolvido pelo "
 "<i><b>%(projeto)s</b></i>."
-msgstr ""
-
-#: templates/sobre.html:26
-msgid "Logotipo Wiki Loves Monuments Brasil"
 msgstr ""
 
 #: templates/sobre.html:35
