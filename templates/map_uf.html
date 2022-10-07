@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-side-modals.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/leaflet.awesome-markers.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css"/>
+{% endblock %}
+
+{% block title %}{{ _("WLM Portugal") }}{% endblock %}
+
+{#{% block navbar %}#}
+{#    {% with lang=lang, username=username, mapa_geral=True, mapa=False, geolocate=True, uf=uf, suggest=True %}#}
+{#        {% include 'topnavbar.html' %}#}
+{#    {% endwith %}#}
+{#{% endblock %}#}
+
+{% block banner %}{% endblock %}
+{% block content %}
+    <div class="w3-row" style="height:100%">
+        <div class="w3-container" style="height:100vh; padding:0">
+            <div id="map"></div>
+            <div class="modal modal-left fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="selectedState" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="filter_title">{{ _("Filtrar") }}</h5>
+                            <button type="button" class="close custom" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body w3-container" id ="filter_content" style="font-family: 'Josefin Sans', 'FontAwesome', 'Font Awesome 6 Free', sans-serif">
+                            <form>
+                                <div class="w3-row">
+                                    <div class="form-group">
+                                        <label for="has_image">{{ _("Monumentos com ou sem imagens?") }}</label>
+                                        <select id="has_image" class="form-control">
+                                            <option value="all" selected>{{ _("Ambos") }}</option>
+                                            <option value="yes">{{ _("Com") }}</option>
+                                            <option value="no">{{ _("Sem") }}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="w3-row">
+                                    <div class="form-group">
+                                        <label for="types">{{ _("Tipos de imagem:") }}</label>
+                                        <select id="types" class="form-control" disabled>
+                                            <option value="all" title="Todas as opções disponíveis">{{ _("Todos os tipos") }}</option>
+                                            <option value="P18" title="{{ _('Imagem ilustrativa do monumento') }}">&#xf03e; {{ _('Imagem do exterior/Imagem ilustrativa') }}</option>
+                                            <option value="P5775" title="{{ _('Vista do interior de um edifício ou espaço fechado') }}">&#xf52b; {{ _('Imagem do interior do monumento') }}</option>
+                                            <option value="P9721" title="{{ _('Vista da entrada de um edifício ou espaço fechado, vista do lado de fora') }}">&#xf6d9; {{ _('Imagem da entrada vista de fora') }}</option>
+                                            <option value="P9906" title="{{ _('Imagem de inscrições no monumento') }}">&#xf022; {{ _('Imagem de inscrição no monumento') }}</option>
+                                            <option value="P1801" title="{{ _('Imagem de placa de inauguração ou inscrição mencionando o monumento') }}">&#xf5a2; {{ _('Placa comemorativa ou de inauguração') }}</option>
+                                            <option value="P1766" title="{{ _('Imagem de placa de trânsito com nome de local') }}">&#xf277; {{ _('Placa de trânsito com o nome do monumento') }}</option>
+                                            <option value="P8592" title="{{ _('Fotografia de um monumento tirada do ar, por um drone, por exemplo') }}">&#xf533; {{ _('Vista aérea do monumento') }}</option>
+                                            <option value="P3451" title="{{ _('Monumento ao entardecer ou à noite') }}">&#xf186; {{ _('Vista noturna ou ao entardecer') }}</option>
+                                            <option value="P4291" title="{{ _('Ampla vista geral que contém o monumento') }}">&#xe209; {{ _('Imagem panorâmica do monumento') }}</option>
+                                            <option value="P8517" title="{{ _('Imagem que o observador vê estando no monumento') }}">&#xe52f; {{ _('Vista a partir do monumento') }}</option>
+                                            <option value="P3311" title="{{ _('Imagem representando a planta de um edifício ou local') }}">&#xf546; {{ _('Imagem da planta de um edifício') }}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="custom btn btn-secondary" data-dismiss="modal">{{ _("Cancelar") }}</button>
+                            <button id="filter" type="button" class="custom btn btn-primary" data-dismiss="modal">{{ _("Filtrar") }}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% include 'presentationmodal.html' %}
+            {% include 'langmodal.html' %}
+            {% include 'aboutmodal.html' %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+    <script src="{{ url_for('static', filename='js/leaflet.awesome-markers.js') }}"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <script src="https://unpkg.com/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster.freezable@1.0.0/dist/leaflet.markercluster.freezable.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easyprint@2.1.9/dist/bundle.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        const bounds = {{ bounds | safe }};
+        const filterTooltip = "{{ _('Filtrar os monumentos') }}";
+        const selectTooltip = "{{ _('Selecionar os monumentos') }}";
+        const unselectTooltip = "{{ _('Limpar seleção') }}";
+        const homeTooltip = "{{ _('Voltar para o mapa principal') }}";
+        const langTooltip = "{{ _('Mudar de idioma') }}";
+        const ungroupTooltip = "{{ _('Desagrupar monumentos') }}";
+        const groupTooltip = "{{ _('Agrupar monumentos') }}";
+        const infoTooltip = "{{ _('Informações sobre o aplicativo') }}";
+        const coordinatesTooltip = "{{ _('Adicionar coordenadas a monumentos') }}";
+        const suggestionsTooltip = "{{ _('Sugerir monumentos para o mapa') }}";
+        const ungroupTitle = "{{ _('Desagrupar') }}";
+        const groupTitle = "{{ _('Agrupar') }}";
+        const filterTitle = "{{ _('Filtrar') }}";
+        const printTitle = "{{ _('Imprimir mapa') }}";
+        const landscapeTitle = "{{ _('Paisagem') }}";
+        const portraitTitle = "{{ _('Retrato') }}";
+        const saveSelectionTitle = "{{ _('Salvar seleção') }}";
+        const selectTitle = "{{ _('Selecionar') }}";
+        const noTypeTitle = "{{ _('Nenhum tipo') }}";
+        const allTypesTitle = "{{ _('Todos os tipos') }}";
+        const whereAmIMsg = '{{ _("Mostre-me onde estou") }}';
+        const credits_osm = '&copy; <a href="https://openstreetmap.org/copyright">{{ _("Contribuidores do OpenStreetMap") }}</a>';
+        const credits_wikimedia = '<a href="https://foundation.wikimedia.org/wiki/Maps_Terms_of_Use">{{ _("Mapas da Wikimedia") }}</a> | ' + credits_osm;
+        const logo_path = "{{ url_for('static', filename='images/logo.svg') }}";
+        const home_url = "{{ url_for('mapa') }}";
+        const coordinates_url = "{{ url_for('geolocate', uf=uf) }}";
+        const suggestions_url = "{{ url_for('suggest', uf=uf)}}";
+        const instruction = "{{ _('Selecione um monumento') }}";
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/map_uf.js') }}"></script>
+    <script type="text/javascript">{{ markers|safe }}</script>
+{% endblock %}

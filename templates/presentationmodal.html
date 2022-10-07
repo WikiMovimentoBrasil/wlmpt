@@ -1,0 +1,32 @@
+<div class="modal modal-left fade" id="presentationModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="background-color: rgba(255,255,255,0.85);">
+            <div class="modal-header">
+                <h2 class="modal-title" id="selectedState">{{ _("Seja bem-vindo(a/e)!") }}</h2>
+                <button type="button" class="close custom" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>{{ _("Olá, gostaríamos de te dar as boas-vindas!") }}</p>
+                <p>{{ _("O <b>Wiki Loves Monuments Portugal</b> é um aplicativo de envio de imagens para a etapa nacional do maior concurso fotográfico do mundo, o <b><i>Wiki Loves Monuments</i></b>!") }}</p>
+                <p>{{ _("Envie suas fotografias do patrimônio histórico português durante o mês de outubro para participar e concorrer a prêmios.") }}</p>
+                <hr>
+                <p>{{ _("Comece selecionando uma subdivisão no mapa para ver os monumentos da região.") }}</p>
+                <hr>
+                <p>
+                    <a target="_blank" href="{{ _('https://wikilovesmonuments.org.pt') }}">
+                        {{ _("Visite a página do concurso") }}
+                    </a>
+                </p>
+                <hr>
+                <p>
+                    {% set projeto %}<a tabindex="0" target='_blank' aria-label='{{ _("Wiki Movimento Brasil") }}' href='https://meta.wikimedia.org/wiki/Wiki_Movement_Brazil_User_Group/{{ lang }}'>{{ _("Grupo de usuários Wiki Movimento Brasil") }}</a>{% endset %}
+                    {% set developer %}<a target='_blank' href='mailto:info@wikimedia.pt'><i>{{ _("info@wikimedia.pt") }}</i></a>{% endset %}
+                    {{ _("<i>Wiki Loves Monuments Portugal</i> é um aplicativo desenvolvido pelo <i><b>%(projeto)s</b></i>.", projeto=projeto) }}<br><br>
+                    {{ _("Dúvidas, reclamações, sugestões ou elogios: Envie uma mensagem para %(developer)s.", developer=developer) }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

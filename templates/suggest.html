@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+{% endblock %}
+
+{% block scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $("#{{ uf }}").attr('selected', 'selected'); }
+        );
+    </script>
+{% endblock %}
+
+{% block title %}{{ _("Sugira monumentos") }}{% endblock %}
+
+{% block navbar %}
+    {% with lang=lang, username=username, mapa_geral=True, mapa=True, geolocate=True, uf=uf, suggest=False %}
+        {% include 'topnavbar.html' %}
+    {% endwith %}
+{% endblock %}
+
+{% block banner %}
+    {% include 'langmodal.html' %}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-success">
+                    <a href="#" class="close custom-link" data-dismiss="alert">&times;</a>
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+{% endblock %}
+
+{% block content %}
+    <div class="w3-row" style="padding:30px 10px; ">
+        <div class="w3-quarter">&nbsp;</div>
+        <div class="w3-container w3-half">
+            <div class="w3-row" style="padding-bottom: 30px">
+                {{ _('Utilize o formulário abaixo para sugerir monumentos que não estejam nos mapas ou nas
+                listas do Wiki Loves Monuments Portugal.') }}
+            </div>
+            <form method="POST" role="form">
+                <div class="w3-row form-group">
+                    <label for="inputName">{{ _('Qual o nome do monumento? <sup style="color:#990000">*</sup>') }}</label>
+                    <input type="text" class="form-control" name="inputName" id="inputName"
+                           style="width: 100%; font-size: 90%"
+                           placeholder="{{ _('Digite o nome do monumento') }}" required>
+                </div>
+                <div class="w3-row form-group">
+                    <label for="inputState">{{ _('Em qual distrito está localizado? <sup style="color:#990000">*</sup>') }}</label>
+                    <select class="form-control" name="inputState" id="inputState" required style="font-size: 90%">
+                        <optgroup label="{{ _('Alentejo') }}">
+                            <option id="be" value="be">{{ _('Beja') }}</option>
+                            <option id="ev" value="ev">{{ _('Évora') }}</option>
+                            <option id="pa" value="pa">{{ _('Portalegre') }}</option>
+                        </optgroup>
+                        <optgroup label="{{ _('Algarve') }}">
+                            <option id="fa" value="fa">{{ _('Faro') }}</option>
+                        </optgroup>
+                        <optgroup label="{{ _('Centro') }}">
+                            <option id="av" value="av">{{ _('Aveiro') }}</option>
+                            <option id="cb" value="cb">{{ _('Castelo Branco') }}</option>
+                            <option id="co" value="co">{{ _('Coimbra') }}</option>
+                            <option id="gu" value="gu">{{ _('Guarda') }}</option>
+                            <option id="le" value="le">{{ _('Leiria') }}</option>
+                            <option id="vi" value="vi">{{ _('Viseu') }}</option>
+                        </optgroup>
+                        <optgroup label="{{ _('Área Metropolitana de Lisboa') }}">
+                            <option id="li" value="li">{{ _('Lisboa') }}</option>
+                            <option id="sa" value="sa">{{ _('Santarém') }}</option>
+                            <option id="se" value="se">{{ _('Setúbal') }}</option>
+                        </optgroup>
+                        <optgroup label="{{ _('Norte') }}">
+                            <option id="ba" value="ba">{{ _('Braga') }}</option>
+                            <option id="br" value="br">{{ _('Bragança') }}</option>
+                            <option id="po" value="po">{{ _('Porto') }}</option>
+                            <option id="vc" value="vc">{{ _('Viana do Castelo') }}</option>
+                            <option id="vr" value="vr">{{ _('Vila Real') }}</option>
+                        </optgroup>
+                        <optgroup label="{{ _('Açores') }}">
+                            <option id="ac" value="ac">{{ _('Açores') }}</option>
+                        </optgroup>
+                        <optgroup label="{{ _('Madeira') }}">
+                            <option id="ma" value="ma">{{ _('Madeira') }}</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="w3-row form-group">
+                    <label for="inputLocal">{{ _('Em qual(is) freguesia(s) está localizado? <sup style="color:#990000">*</sup>') }}</label>
+                    <input type="text" class="form-control" name="inputLocal" id="inputLocal"
+                           style="width: 100%; font-size: 90%"
+                           placeholder="{{ _('Digite o nome da freguesia') }}" required>
+                </div>
+                <div class="w3-row form-group">
+                    <label for="inputAddress">{{ _('Você sabe o endereço?') }}</label>
+                    <input type="text" class="form-control" name="inputAddress" id="inputAddress"
+                           placeholder="{{ _('Digite o endereço') }}" style="width: 100%; font-size: 90%">
+                </div>
+                <div class="w3-row form-group">
+                    <label for="inputAddress">{{ _('Link para referência sobre o monumento: <sup style="color:#990000">*</sup>') }}</label>
+                    <input type="url" class="form-control" name="inputURL" id="inputURL"
+                           placeholder="{{ _('Insira a URL de referência') }}" style="width: 100%; font-size: 90%" required>
+                </div>
+                <div class="w3-row form-group">
+                    <label for="inputComments">{{ _('Algum comentário sobre o monumento?') }}</label>
+                    <textarea class="form-control" name="inputComments" id="inputComments" rows="3"
+                              style="width: 100%; font-size: 100%"></textarea>
+                </div>
+                <input type="submit" class="btn custom btn-primary" style="float: right; width: 100%"
+                       value="{{ _('Enviar sugestão') }}">
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}{% endblock %}
