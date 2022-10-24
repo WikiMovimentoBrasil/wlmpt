@@ -17,7 +17,7 @@ const regions = ["AC", "AL", "AG", "C", "LI", "MA", "N"]
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // MAP LAYER
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-let map = L.map('map', {zoomControl: false}).setMaxBounds([[45, -36], [28, 1]]).setView([36.5, -18.5], 6);
+let map = L.map('map', {zoomControl: false}).setMaxBounds([[45, -36], [28, 1]]).setView([39.6, -7.9], 6);
 
 // OpenStreetMap
 let osm_map = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
